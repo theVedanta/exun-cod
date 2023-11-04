@@ -1,260 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style3.css" />
+    </head>
 
-      * {
-        box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
-      }
-      body {
-        margin: 0;
-      }
-
-      .navbar {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 4rem;
-        background-color: white;
-        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-        margin: 0;
-      }
-      .navbar img {
-        width: 120px;
-      }
-
-      .navbar .list {
-        display: flex;
-        list-style: none;
-      }
-      .navbar .list li {
-        padding: 0 20px;
-      }
-      .navbar .list li a {
-        color: #666666;
-        text-decoration: none !important;
-        font-size: 16px;
-      }
-
-      .section {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        margin: auto;
-        width: 80%;
-        margin: 1rem auto;
-      }
-      .section .left {
-      }
-      .section .left .card {
-        background: #fff;
-        box-shadow: 1px 2px 4px 2px #5c787240;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 0 20px 0;
-        border-radius: 5px;
-      }
-      .section .left .card img {
-        width: 120px;
-        height: 150px;
-        margin-top: 2rem;
-      }
-      .section .left .card .ab {
-        margin: 0;
-      }
-      .section .left .card .ab h3,
-      .section .left .card .ab p {
-        text-align: center;
-        margin: 0;
-      }
-      .section .left .card .ab h3 {
-        color: #27213c;
-        font-weight: 500;
-        font-size: 22px;
-      }
-      .section .left .card .ab p {
-        color: #9b9b9b;
-      }
-      .section .left .card p {
-        padding: 0 20px;
-        font-size: 15px;
-        color: #282828;
-        text-align: center;
-      }
-      .section .left .card .btn {
-        background-color: #27213c;
-        color: white;
-        border: none;
-        outline: none;
-        padding: 10px 20px;
-        border-radius: 7px;
-      }
-
-      .section .right {
-        margin-left: 2.5rem;
-        box-shadow: 1px 2px 4px 2px #5c787240;
-      }
-      .section h2 {
-        text-align: center;
-        font-size: 45px;
-        font-weight: 500;
-        color: #27213c;
-      }
-      .section .right .header {
-        background-color: #27213c;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        position: relative;
-      }
-      .section .right .header img {
-        /* position: absolute;
-  bottom: 0;
-  left: 50%; */
-        transform: translateY(55%);
-      }
-      .section .right .content {
-        padding: 0 2.5rem;
-        margin-top: 6rem;
-      }
-      .section .right .content h3 {
-        font-size: 25px;
-        font-weight: 500;
-        color: #27213c;
-        margin-top: 3rem;
-      }
-      .section .right .content p {
-        font-size: 17px;
-        color: #282828;
-        /* margin: 1rem 0; */
-      }
-      .section .right .content .card-sec {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-bottom: 30px;
-
-      }
-      .section .right .content .card-sec .card {
-        margin: 0 10px;
-        box-shadow: 1px 2px 4px 2px #5c787240;
-        padding: 2rem;
-      }
-      .section .right .content .card-sec .card h4 {
-        font-weight: 500;
-        font-size: 18px;
-        margin: 0;
-      }
-      .section .right .content .card-sec .card p {
-        color: #282828;
-        font-size: 15px;
-      }
-
-      .section .right .content .card-sec .card button {
-        float: right;
-        background-color: #27213c;
-        border: none;
-        outline: none;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: white;
-        padding: 5px 10px;
-        margin-top: 5px;
-      }
-    </style>
-  </head>
-  <body>
-    <div className="navbar">
-      <div>
-        <img src="Frame 2.png" alt="" />
-      </div>
-      <ul className="list">
-        <li>
-          <a href="">Home</a>
-        </li>
-        <li>
-          <a href="">About Us</a>
-        </li>
-        <li>
-          <a href="">Community</a>
-        </li>
-        <li>
-          <a href="">Profile</a>
-        </li>
-        <li>
-          <a href="">Login</a>
-        </li>
-      </ul>
-    </div>
-
-    <div className="section">
-      <h2></h2>
-      <h2>Profile</h2>
-
-      <div className="left">
-        <div className="card">
-          <img src="Group 34.png" alt="" />
-          <div className="ab">
-            <h3>Lorem Ipsum</h3>
-            <p>Developer</p>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            convallis ultricies short description
-          </p>
-          <button className="btn">Edit Profile</button>
-        </div>
-      </div>
-      <div className="right">
-        <div className="about_section">
-          <div className="header">
-            <img src="Group 34.png" alt="" />
-          </div>
-          <div className="content">
-            <h3>About Me</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit
-              dictum molestie imperdiet ut facilisi consectetur odio. Dignissim
-              fames nibh ornare sit sed sagittis leo. Sodales mollis in mi
-              tellus turpis integer. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Blandit dictum molestie imperdiet ut facilisi
-              consectetur odio.
-            </p>
-            <h3>Recent Posts</h3>
-            <div className="card-sec">
-              <div className="card">
-                <h4>Lorem Ipsum Add question here</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore Lorem
-                  ipsum...
-                </p>
-                <button>
-                  Read More <img src="akar-icons_arrow-right.png" />
-                </button>
-              </div>
-              <div className="card">
-                <h4>Lorem Ipsum Add question here</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore Lorem
-                  ipsum...
-                </p>
-                <button>
-                  Read More <img src="akar-icons_arrow-right.png" />
-                </button>
-              </div>
+    <body>
+        <div className="navbar">
+            <div>
+                <img src="Frame 2.png" alt="" />
             </div>
-          </div>
+            <ul className="list">
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">About Us</a>
+                </li>
+                <li>
+                    <a href="">Community</a>
+                </li>
+                <li>
+                    <a href="">Profile</a>
+                </li>
+                <li>
+                    <a href="">Login</a>
+                </li>
+            </ul>
         </div>
-      </div>
-    </div>
-  </body>
+
+        <div className="section">
+            <h2></h2>
+            <h2>Profile</h2>
+
+            <div className="left">
+                <div className="card">
+                    <img src="Group 34.png" alt="" />
+                    <div className="ab">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Developer</p>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nulla convallis ultricies short description
+                    </p>
+                    <button className="btn">Edit Profile</button>
+                </div>
+            </div>
+            <div className="right">
+                <div className="about_section">
+                    <div className="header">
+                        <img src="Group 34.png" alt="" />
+                    </div>
+                    <div className="content">
+                        <h3>About Me</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Blandit dictum molestie imperdiet ut facilisi
+                            consectetur odio. Dignissim fames nibh ornare sit
+                            sed sagittis leo. Sodales mollis in mi tellus turpis
+                            integer. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Blandit dictum molestie imperdiet
+                            ut facilisi consectetur odio.
+                        </p>
+                        <h3>Recent Posts</h3>
+                        <div className="card-sec">
+                            <div className="card">
+                                <h4>Lorem Ipsum Add question here</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore Lorem
+                                    ipsum...
+                                </p>
+                                <button>
+                                    Read More
+                                    <img src="akar-icons_arrow-right.png" />
+                                </button>
+                            </div>
+                            <div className="card">
+                                <h4>Lorem Ipsum Add question here</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore Lorem
+                                    ipsum...
+                                </p>
+                                <button>
+                                    Read More
+                                    <img src="akar-icons_arrow-right.png" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
